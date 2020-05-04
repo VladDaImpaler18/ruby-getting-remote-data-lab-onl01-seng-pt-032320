@@ -18,9 +18,7 @@ class GetRequester
   end
   
   def parse_json
-    #self.get_response_body
-    binding.pry
+    JSON.parse(self.get_response_body)
   end
-  
   
 end
